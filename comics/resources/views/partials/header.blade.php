@@ -6,7 +6,7 @@
         <nav>
             <ul class="lista">
                 <li>
-                    <a href="{{ route('characters') }}">CHARACTERS</a>
+                    <a href="{{ route('home') }}">home</a>
                 </li>
                 <li>
                     <a href="{{ route('comics') }}">comics</a>
@@ -75,5 +75,10 @@
         display: block;
         height: 4px;
         background-color: blue;
+    }
+
+    a{
+        list-style: none;
+        text-decoration: none;
     }
 </style>
