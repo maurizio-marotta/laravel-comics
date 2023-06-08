@@ -2,7 +2,7 @@
 
 @section('content')
 
-
+    <div class="img"></div>
     <div class="containers ">
         @forelse ($fumetti as $fumetto)
         <div class="card">
