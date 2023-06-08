@@ -5,16 +5,36 @@
         </div>
         <nav>
             <ul class="lista">
-                <li>charaters</li>
-                <li>comics</li>
-                <li>movies</li>
-                <li>tv</li>
-                <li>games</li>
-                <li>collectibles</li>
-                <li>videos</li>
-                <li>fans</li>
-                <li>news</li>
-                <li>shop</li>
+                <li>
+                    <a href="{{ route('characters') }}">CHARACTERS</a>
+                </li>
+                <li>
+                    <a href="{{ route('comics') }}">comics</a>
+                </li>
+                <li>
+                    <a href="{{ route('movies') }}">movies</a>
+                </li>
+                <li>
+                    <a href="{{ route('tv') }}">tv</a>
+                </li>
+                <li>
+                    <a href="{{ route('games') }}">games</a>
+                </li>
+                <li>
+                    <a href="{{ route('collectibles') }}">collectibles</a>
+                </li>
+                <li>
+                    <a href="{{ route('videos') }}">videos</a>
+                </li>
+                <li>
+                    <a href="{{ route('fans') }}">fans</a>
+                </li>
+                <li>
+                    <a href="{{ route('news') }}">news</a>
+                </li>
+                <li>
+                    <a href="{{ route('shop') }}">shop</a>
+                </li>
             </ul>
         </nav>
     </div>
