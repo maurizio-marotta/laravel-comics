@@ -116,7 +116,7 @@
 
     .dc-logo {
         height: 100%;
-        background-image: url(../assets/img/dc-logo-bg.png);
+        background-image: url(/img/dc-logo-bg.png);
         background-repeat: no-repeat;
         background-position: right;
         margin-right: 50px;

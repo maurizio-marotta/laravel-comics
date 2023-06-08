@@ -4,7 +4,7 @@
             <img src="/img/dc-logo.png" alt="logo">
         </div>
         <nav>
-            <ul>
+            <ul class="lista">
                 <li>charaters</li>
                 <li>comics</li>
                 <li>movies</li>
@@ -35,7 +35,7 @@
         width: 50px;
     }
 
-    ul {
+    .lista {
         display: flex;
     }
 
