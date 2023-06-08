@@ -3,14 +3,16 @@
 @section('content')
 
 
-    @forelse ($fumetti as $fumetto)
-
+    <div class="containers ">
+        @forelse ($fumetti as $fumetto)
         <div class="card">
-            <img src="{{ $fumetto['src'] }}" alt="">
-            <p>{{ $fumetto['titolo'] }}</p>
+            <img class="immagine" src="{{ $fumetto['src'] }}" alt="">
+            <span>{{ $fumetto['titolo'] }}</span>
         </div>
 
-    @empty
+            @empty
 
-    @endforelse
+            @endforelse
+    </div>
 @endsection
+
