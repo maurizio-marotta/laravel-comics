@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
     return view('home');
 })->name('home');
 
@@ -21,6 +22,7 @@ Route::get('/', function () {
 Route::get('/comics', function () {
     //dump(config('fumetti'));
     $fumetti = Config('fumetti');
+    $catalogo = Config('catalogo.catalogo');
     return view('comics', compact('fumetti'));
 })->name('comics');
 
@@ -55,3 +57,5 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('error');
 })->name('shop');
+
+

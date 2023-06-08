@@ -1,8 +1,14 @@
 @extends('layout.main')
+@extends('layout.main')
+@php
+
+    $catalogo = Config('catalogo.catalogo');
+@endphp
 
 @section('content')
-<div class="card">
-    <img :src="https://static.wikia.nocookie.net/marvel_dc/images/5/50/Batman_Beyond_v.1_1.jpg">
-    <span></span>
-  </div>
-@endsection
+    <div class="img"></div>
+    <div class="containe">
+        <h1 class="text-center">cerca i migliori fumetti della dc</h1>
+        <p class="text-center">prova a cercare in comics</p>
+    </div>
+    @endsection
