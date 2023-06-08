@@ -19,7 +19,9 @@ Route::get('/', function () {
 
 
 Route::get('/comics', function () {
-    return view('comics');
+    //dump(config('fumetti'));
+    $fumetti = Config('fumetti');
+    return view('comics', compact('fumetti'));
 })->name('comics');
 
 Route::get('/movies', function () {

@@ -1,5 +1,16 @@
 @extends('layout.main')
 
 @section('content')
-<h1>ciao</h1>
+
+
+    @forelse ($fumetti as $fumetto)
+
+        <div class="card">
+            <img src="{{ $fumetto['src'] }}" alt="">
+            <p>{{ $fumetto['titolo'] }}</p>
+        </div>
+
+    @empty
+
+    @endforelse
 @endsection
