@@ -40,45 +40,4 @@
     </div>
 </header>
 
-<style scoped>
-    .root {
-        background-color: #FFFFFF;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0px 150px;
-        margin-top: 30px;
-    }
 
-    img {
-        width: 50px;
-    }
-
-    .lista {
-        display: flex;
-    }
-
-    li {
-        list-style: none;
-        margin: 10px;
-    }
-
-    li:hover {
-        color: blue;
-        cursor: pointer;
-    }
-
-    li:hover::after {
-        content: '';
-        width: 100%;
-        display: block;
-        height: 4px;
-        background-color: blue;
-    }
-
-    a{
-        list-style: none;
-        text-decoration: none;
-    }
-</style>

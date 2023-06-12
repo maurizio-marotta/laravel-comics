@@ -13,16 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
 
+Route::get('/', function () {
     return view('home');
 })->name('home');
 
-
 Route::get('/comics', function () {
-    //dump(config('fumetti'));
-    $fumetti = Config('fumetti');
-    $catalogo = Config('catalogo.catalogo');
+    //dd(config('fumetti'));
+    $fumetti = config('fumetti');
+    // dd($fumetti);
     return view('comics', compact('fumetti'));
 })->name('comics');
 
@@ -57,5 +56,20 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('error');
 })->name('shop');
+
+
+Route::get('/shop', function () {
+    return view('error');
+})->name('shop');
+
+Route::get('/comics-detail/{slug}', function ($slug) {
+    $fumetti = config('fumetti');
+
+    $fumetto_array = array_filter($fumetti, fn($item) => $item['slug'] === $slug);
+    //dd($fumetto_array);
+    $fumetto = $fumetto_array[array_key_first($fumetto_array)];
+
+    return view('comics-detail', compact('fumetto'));
+})->name('comics-detail');
 
 

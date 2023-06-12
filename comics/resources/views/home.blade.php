@@ -1,9 +1,5 @@
 @extends('layout.main')
-@extends('layout.main')
-@php
 
-    $catalogo = Config('catalogo.catalogo');
-@endphp
 
 @section('content')
     <div class="img"></div>
