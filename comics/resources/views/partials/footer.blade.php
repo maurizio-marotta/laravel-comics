@@ -36,13 +36,13 @@
                     <li>comics</li>
                 </ul>
             </div>
-            <div class="barra-link-2 d-flex">
+            <!--<div class="barra-link-2 d-flex">
                 <ul class="seconda">
                     <li><strong>Dc comics</strong></li>
                     <li>charaters</li>
                     <li>comics</li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         <div class="sing-up d-flex">
             <div class="log">sing-up now!</div>
